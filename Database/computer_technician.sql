@@ -1,0 +1,52 @@
+-- phpMyAdmin SQL Dump
+-- version 4.0.4
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Oct 23, 2017 at 10:00 PM
+-- Server version: 5.6.12-log
+-- PHP Version: 5.4.16
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `users`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `computer_technician`
+--
+
+CREATE TABLE IF NOT EXISTS `computer_technician` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(30) NOT NULL,
+  `cost` int(10) NOT NULL,
+  `rating` float NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+
+--
+-- Dumping data for table `computer_technician`
+--
+
+INSERT INTO `computer_technician` (`id`, `name`, `cost`, `rating`) VALUES
+(1, 'Suhas Shelke', 400, 3.9),
+(2, 'Karan Maitra', 600, 4.2),
+(3, 'Vicky Malhotra', 800, 4.9),
+(4, 'Abdul Khan', 250, 2.6),
+(5, 'Jatan Sapru', 300, 3.1),
+(6, 'Nilesh Sahu', 450, 4.1),
+(7, 'Rajesh Kumar', 350, 3.5);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
